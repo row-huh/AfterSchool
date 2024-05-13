@@ -1,5 +1,3 @@
-(readme is right now to guide team members);
-
 To get started, use 
 `git clone https://www.github.com/row-huh/pace.git`
 in cmd. After doing this, you should have a local copy of the project
@@ -15,8 +13,3 @@ https://nodejs.org/en/learn/getting-started/how-to-install-nodejs
 
 and after installing node.js, make sure to run 
 `npm install react react-dom`
-
-Make changes to the codebase and when done use
-`git add .` to keep track of all the new files that may have been created, then
-`git commit -am "<commit message that details what changes you made>"` to contribute your code, finally
-`git push` - this pushes all the changes you made, all that you committed to the remote- which is this repository in github!
