@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h2>Survey Form</h2>
+    <form action="/submit_form" method="post">
+        <div>
+            <label for="age">1. How would you classify your age group?</label><br>
+            <input type="radio" id="under_18" name="age_group" value="Under 18">
+            <label for="under_18">Under 18</label><br>
+            <input type="radio" id="18_25" name="age_group" value="18 – 25">
+            <label for="18_25">18 – 25</label><br>
+            <input type="radio" id="25_40" name="age_group" value="25 – 40">
+            <label for="25_40">25 – 40</label><br>
+            <input type="radio" id="over_40" name="age_group" value="Over 40">
+            <label for="over_40">Over 40</label><br>
+        </div>
+
+        <div>
+            <label for="gender">2. How would you describe your gender?</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+        </div>
+
+        <div>
+            <label for="problems">3. What problems do you struggle with?</label><br>
+            <input type="checkbox" id="taxes" name="problems" value="Taxes">
+            <label for="taxes">Taxes</label><br>
+            <!-- Add other options here -->
+            <input type="text" id="other_problem" name="other_problem" placeholder="Other (specify)">
+            <br>
+            <input type="checkbox" id="none" name="problems" value="None">
+            <label for="none">None, I had a special Doraemon with me all my life</label><br>
+        </div>
+
+        <!-- Repeat similar structure for the remaining questions -->
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

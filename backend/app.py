@@ -1,20 +1,15 @@
-from flask import Flask
+from flask import Flask, request
 
-# create a flask app - it's like creating an instance of the Flask object
 app = Flask(__name__)
 
-# create a function that takes using a post request and initially prints on the terminal 
-# will figure out how to send to vertex-ai soon
+@app.route("/questions", methods=['POST'])
+def submit_form():
+    data = request.form.to_dict()
+    print("Form data received:", data)
+    # Assuming add_system_message and handle_query are defined elsewhere
+    # system_prompt = add_system_message(data)
+    # return handle_query(system_prompt)
+    return "Form data received successfully"
 
-@app.route('/questionnaire', methods=['POST'])
-def get_questionnaire_data():
-    # get the data from the post request
-    #TODO
-    # print data
-    #TODO
-    # return a random html response
-    
-    return "Hello world"
-
-
-# hello world nlahaisnfsianfpinsd
+if __name__ == '__main__':
+    app.run(debug=True)
