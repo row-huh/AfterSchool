@@ -1,10 +1,6 @@
-from flask import Flask, request, render_template
+from flask import Flask, request
 
 app = Flask(__name__)
-
-@app.route("/questions", methods=['GET'])
-def show_form():
-    return render_template('form.html')
 
 @app.route("/questions", methods=['POST'])
 def submit_form():
